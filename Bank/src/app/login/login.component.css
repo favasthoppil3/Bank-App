@@ -1,0 +1,127 @@
+#background {
+    max-width: 100%;
+    height: 100vh;
+    background-image: url("./../../assets/maxim-berg-6-NP_CdNqtU-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.main {
+    max-width: 75%;
+    height: 90%;
+    background-color: #fff;
+    position: relative;
+    left: 200px;
+    top: 40px;
+}
+
+.left {
+    max-width: 45%;
+    height: 100%;
+
+}
+
+.left img {
+    max-width: 100%;
+    height: fit-content;
+    position: relative;
+    top: 20px;
+}
+
+.right {
+    max-width: 55%;
+    height: 100%;
+    background-color: #fff;
+
+}
+
+.sign-in {
+    margin-left: 280px;
+    margin-top: 40px;
+    max-width: fit-content;
+    height: fit-content;
+}
+
+.sign-btn button {
+    border-radius: 100px;
+    border: 1px solid rgb(90, 90, 90);
+    padding: 6px;
+    width: 100px;
+    line-height: 20px;
+    font-size: small;
+    font-weight: 500;
+    background-color: #fff;
+    position: relative;
+    left: 10px;
+
+}
+
+.sign-btn button:hover {
+    background-color: blueviolet;
+    color: #fff;
+    transition: 0.6s;
+}
+
+
+.sign-btn {}
+
+.pp {
+    max-width: 100%;
+    margin: 30px 80px;
+}
+
+.inp {
+    max-width: 100%;
+}
+
+.inp input {
+    width: 100%;
+    border: 1px solid gray;
+    line-height: 35px;
+}
+
+label {
+    font-weight: 500;
+}
+
+.login-btn button {
+    border-radius: 100px;
+    border: 1px solid rgb(90, 90, 90);
+    padding: 6px;
+    width: 150px;
+    line-height: 25px;
+    font-size: small;
+    color: #fff;
+    font-weight: 500;
+    background-color: blueviolet;
+    box-shadow: 0px 3px 10px rgb(170, 79, 255);
+}
+
+.login-btn button:hover {
+    background-color: rgb(127, 3, 244);
+    transition: 0.6s;
+}
+
+h6 {
+    color: rgb(181, 110, 247);
+}
+
+input::placeholder {
+    color: rgb(189, 188, 188);
+}
+
+h1 {
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    font-size: larger;
+    color: black;
+}
+
+a:hover {
+    color: #fff;
+}

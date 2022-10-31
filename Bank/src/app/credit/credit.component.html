@@ -1,0 +1,48 @@
+<div class="slide-up2 p-5 text-center  rounded">
+    <div class="mb-3">
+        <input type="text" class="form-control" [(ngModel)]="name" placeholder="Enter the name">
+    </div>
+    <div class="mb-3">
+        <input type="text" class="form-control" [(ngModel)]="accountno" placeholder="Enter accountnumber">
+    </div>
+    <div class="mb-3">
+        <input type="text" class="form-control" [(ngModel)]="pan" placeholder="Enter pan number">
+    </div>
+    <div class="mb-3">
+        <input type="text" class="form-control" [(ngModel)]="adhar" placeholder="Enter adhar number">
+    </div>
+    <div class="mb-3">
+        <input type="text" class="form-control" [(ngModel)]="salary" placeholder="Enter salary">
+    </div>
+    <div class="text-center">
+        <button class=" w-50" (click)="credit()">Submit</button>
+    </div>
+</div>
+
+
+<div class="balance">
+    <div class="bg">
+        <table class="table table-light">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Account Number</th>
+                    <th>Name
+                    <th>
+                    <th>Balance
+                    <th>
+                </tr>
+            </thead>
+            <thead>
+                <tr *ngFor="let data of creditArray">
+                    <th>1</th>
+                    <td>{{data.accno}}</td>
+                    <td>{{data.name}}
+                    <td>
+                    <td>{{data.salary}}
+                    <td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,67 @@
+<section id="background">
+    <div class="row main">
+        <div class="left">
+            <img src="../../assets/clay-banks-WNrMJykUiwU-unsplash.jpg" alt="">
+        </div>
+        <div class=" right">
+
+            <div class="col sign-in">
+                <span>Already have an account?</span>
+                <span class="sign-btn"><button><a href="/login">Login</a></button></span>
+            </div>
+            <form class="pp" [formGroup]="registerForm">
+                <div>
+                    <h3>Welcome to our bank</h3>
+                </div>
+                <div>
+                    <h6>Register your account</h6>
+                </div>
+                <div>
+                    <label for="" class="mt-2 form-label ">User name</label>
+                </div>
+                <div class="inp">
+                    <input type="text" class="rounded ps-2 " formControlName="username" name="" id=""
+                        placeholder="Enter the name">
+
+                </div>
+                <div style="color: red;"
+                    *ngIf="(this.registerForm.get('username')?.errors) && (this.registerForm.get('username')?.touched) ">
+                    Enter the user name</div>
+                <div>
+                    <label for="" class="mt-2 ">Account number</label>
+                </div>
+                <div class="inp">
+                    <input type="text" class="rounded ps-2" formControlName="accountnumber" name="" id=""
+                        placeholder="Enter account number">
+                </div>
+                <div style="color: red;"
+                    *ngIf="this.registerForm.get('accountnumber')?.errors && this.registerForm.get('accountnumber')?.touched">
+                    Enter account number </div>
+                <div>
+                    <label for="" class="mt-2 ">Password</label>
+                </div>
+                <div class="inp">
+                    <input type="password" class="rounded ps-2" formControlName="password" name="" id=""
+                        placeholder="Enter password">
+                </div>
+                <div style="color: red;"
+                    *ngIf="this.registerForm.get('password')?.errors && this.registerForm.get('password')?.touched ">
+                    Enter password</div>
+
+                <div>
+                    <label for="" class="mt-2 ">Minimum balance</label>
+                </div>
+                <div class="inp">
+                    <input type="text" class="rounded ps-2" formControlName="minbalance" name="" id=""
+                        placeholder="Enter min balance">
+                </div>
+                <div style="color: red;"
+                    *ngIf="this.registerForm.get('minbalance')?.errors && this.registerForm.get('minbalance')?.touched ">
+                    Enter minimum balance</div>
+
+                <div class="login-btn mt-4 "><button (click)="register()">REGISTER</button></div>
+            </form>
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,39 @@
+<section class="main-transpage">
+    <div class="balance">
+        <div class="bg">
+            <table class="table table-light">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Type</th>
+                        <th>Message
+                        <th>
+                        <th>Transaction amount
+                        <th>
+                        <th>Current Amount
+                        <th>
+                        <th>Date
+                        <th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let data of dummyarray[0];let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{data.type}}</td>
+                        <td>{{data.message}}
+                        <td>
+                        <td>{{data.transactionamnt}}
+                        <td>
+                        <td>{{data.currentamnt}}
+                        <td>
+                        <td>{{data.date}}
+                        <td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="back-btn">
+        <button class="btn btn-primary" routerLink="/homepage">Back</button>
+    </div>
+</section>

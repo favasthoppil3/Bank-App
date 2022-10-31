@@ -1,0 +1,46 @@
+<section id="background">
+    <div class="row main">
+        <div class="left">
+            <img src="../../assets/clay-banks-WNrMJykUiwU-unsplash.jpg" alt="">
+        </div>
+        <div class=" right">
+
+            <div class="col sign-in">
+                <span>Already have an account?</span>
+                <span class="sign-btn"><button><a href="/register">Sign up</a></button></span>
+            </div>
+            <form [formGroup]="loginForm" class="pp">
+                <div>
+                    <h3>Welcome to our bank</h3>
+                </div>
+                <div>
+                    <h6>Register your account</h6>
+                </div>
+                <div>
+                    <label for="" class="mt-3 ">Account number</label>
+                </div>
+                <div class="inp">
+                    <input type="number" class="rounded ps-2" formControlName="accountnumber" name="" id=""
+                        placeholder="Enter account number">
+                </div>
+                <div style="color: red;"
+                    *ngIf="(this.loginForm.get('accountnumber')?.errors) && (this.loginForm.get('accountnumber')?.touched) ">
+                    Enter the user name</div>
+                <div>
+                    <label for="" class="mt-3 ">Password</label>
+                </div>
+                <div class="inp">
+                    <input type="password" class="rounded ps-2" formControlName="password" name="" id=""
+                        placeholder="Enter password">
+                </div>
+                <div style="color: red;"
+                    *ngIf="(this.loginForm.get('password')?.errors) && (this.loginForm.get('password')?.touched) ">Enter
+                    the user name</div>
+
+
+                <div class="login-btn mt-5 "><button (click)="login()">LOGIN</button></div>
+            </form>
+
+        </div>
+    </div>
+</section>
